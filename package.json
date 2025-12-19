@@ -59,6 +59,7 @@
       "scripts": {
           "dev": "vite --host",
           "build": "vite build",
+          "preview": "vite preview",
           "tunnel": "npx localtunnel --port 3000"
       }
   }
