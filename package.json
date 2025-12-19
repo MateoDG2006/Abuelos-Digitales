@@ -3,6 +3,11 @@
       "name": "App Improvement Feedback",
       "version": "0.1.0",
       "private": true,
+      "type": "module",
+      "engines": {
+          "node": ">=18.0.0",
+          "npm": ">=9.0.0"
+      },
       "dependencies": {
           "@radix-ui/react-accordion": "^1.2.3",
           "@radix-ui/react-alert-dialog": "^1.1.6",
@@ -59,6 +64,7 @@
       "scripts": {
           "dev": "vite --host",
           "build": "vite build",
+          "vercel-build": "npm ci && npm run build",
           "preview": "vite preview",
           "tunnel": "npx localtunnel --port 3000"
       }
